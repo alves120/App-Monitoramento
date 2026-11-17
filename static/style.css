@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e293b, #263449);
+    width: 340px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 18px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+}
+
+
+.card h2 {
+    color: #94a3b8;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#temperatura {
+    font-size: 45px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+#grafico {
+    width: 90% !important;
+    max-width: 1000px;
+    height: 450px !important;
+    margin: 35px auto;
+    padding: 20px;
+    display: block;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #temperatura {
+        font-size: 36px;
+    }
+
+    #grafico {
+        width: 100% !important;
+        height: 320px !important;
+        padding: 10px;
+    }
+}
